@@ -30,14 +30,13 @@ void tape() {
 	print();
 }
 
-bool auth(char c) {
+bool inInLanguage(char c) {
 	int n = c;
 	if (n >= 48 && n <= 57 || n >= 65 && n <= 90 || n >= 97 && n <= 122) {
 	
 		return true;
 	}
 	return false;
-
 
 }
 
@@ -77,7 +76,7 @@ void right_to(char s) {
 
 
 void push(char v) {
-	if (auth(v)) {
+	if (inInLanguage(v)) {
 		cinta[extremo + 1] = ' ';
 		right_to(' ');
 		sigma(v);
@@ -85,7 +84,7 @@ void push(char v) {
 		extremo++;
 	}
 	else {
-		std::cout << "El caracter no s e encuentra en el lenguaje";
+		std::cout << " ";
 	}
 }
 
@@ -103,14 +102,16 @@ void pop() {
 }
 
 void finish() {
-
+	while (extremo != cabezal) {
+		pop();
+	}
 }
 
 void read() {
 	char input = ' ';
 	do {
 	std::cin >> input;
-	
+	input = toupper(input);
 		switch (input)
 		{
 		case 'I': {

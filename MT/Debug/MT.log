@@ -1,2 +1,4 @@
-﻿  MT.vcxproj -> C:\Users\Greye\Desktop\MT\MT\Debug\MT.exe
+﻿  MT.cpp
+c:\users\greye\desktop\mt\mt\mt\mt.cpp(17): warning C4018: '<': no coinciden signed/unsigned
+  MT.vcxproj -> C:\Users\Greye\Desktop\MT\MT\Debug\MT.exe
   MT.vcxproj -> C:\Users\Greye\Desktop\MT\MT\Debug\MT.pdb (Partial PDB)
